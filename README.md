@@ -11,7 +11,11 @@ $ Rails should be set up in your local environment
 $ git clone this repository
 $ cd into this repository
 $ bundle
-$
+$ rake db:create
+$ rake db:migrate
+$ rake db:test:prepare
+
+
 
 User Stories
 
@@ -62,7 +66,7 @@ Technologies Used
 
 Notes:
 There was an initial error: "You have already activated rake 12.3.0, but your Gemfile requires rake 12.0.0. Prepending `bundle exec` to your command may solve this"Database does not exist, which running bundle update, bundle etc did not help
-Ultimately, running bundle update worked, but not initially, though it was tellig me to run bundle lock, which did not solve the problem. 
+Ultimately, running bundle update worked, but not initially, though it was tellig me to run bundle lock, which did not solve the problem.
 
 Support and contact details
 

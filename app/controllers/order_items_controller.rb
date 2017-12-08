@@ -1,6 +1,7 @@
 class OrderItemsController < ApplicationController
 
   def create
+    @order_items = OrderItem.all
     @order = current_order
     @item = @order.order_items.new(item_params)
     @order.save
