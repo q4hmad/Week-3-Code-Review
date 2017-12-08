@@ -1,16 +1,17 @@
 <h3>Products</h3>
+<div class="show_this">
+</div>
 
+</div>
 <div class="row">
   <div class="section">
-    <div class="show_this">
-
-  <% @products.each do |product| %>
+    <% @products.each do |product| %>
     <div class="col s4">
-      <div id="hide_this"><div class="show_this">
+      <div>
         <h4><%= link_to product.name, product_path(product), remote: true %></h4>
         <p><%= product.description %></p>
         <p><%= number_to_currency product.price %></p>
-      </div></div>
+    </div>
       <%= form_for @order_item, remote: true  do |f| %>
       <%= f.hidden_field :product_id, value: product.id %>
 
