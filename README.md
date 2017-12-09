@@ -26,23 +26,17 @@ Login with my Google account.
 Save products to the database.
 Future Features
 
-As a user, I want to...
-Sort items by price.
-See price history over time.
-View list of saved products.
-Search for a keyword on Amazon and Craigslist and see a list of products with that keyword.
-Compare product prices across selling platforms.
-Bugs
+As a user, I want to refactor this code!
+App now does not allow users to add a negative number of items to the cart
 
-The app only works with the specified Chrome extension, and you need to turn it on and off to use different functions.
 
-Angular Information
 
-This project was generated with Angular CLI version 1.0.0.
+
+This project was generated with
 
 Development server
 
-Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+
 
 
 
