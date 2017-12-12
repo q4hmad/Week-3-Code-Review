@@ -1,73 +1,45 @@
 # README
 
+## _Went to Bali - Refactor_
 
-A Rails application that , 12.08.2017
+#### _A basic e-commerce site using Rails and implementing AJAX to refactor an already existing application , 12.08.2017_
 
-By Qudsia Ahmad
+#### By Qudsia Ahmad
 
-Setup and Installation Instructions
+_..._
 
-$ Rails should be set up in your local environment
-$ git clone this repository
-$ cd into this repository
-$ bundle
-$ rake db:create
-$ rake db:migrate
-$ rake db:test:prepare
+### description
+:heavy_check_mark: _Users should be able to add products to their shopping cart from the index page with AJAX. The item should be added to the shopping cart and the number of items in the cart (shown in the navbar) should update._
 
+:heavy_check_mark: _Users should be able to click on a product and show/hide the product detail using AJAX. The product detail should include an image (either Paperclip or an image link), the description, and any other fields you choose to add._
 
+:heavy_check_mark: _Users should be able to remove items from the shopping cart without a page reload. The "delete" link should result in the item being removed from the shopping cart and the total price being updated._
 
-User Stories
+### _Setup and Installation Instructions_
 
-As a user, I want to...
-Search for a keyword on eBay and see a list of products with that keyword.
-Click on an image to see product details.
-Login with my Google account.
-Save products to the database.
-Future Features
-
-As a user, I want to refactor this code!
-App now does not allow users to add a negative number of items to the cart
-
+$ _Rails should be set up in your local environment
+$ _git clone this repository
+$ _cd into this repository
+$ _bundle
+$ _rake db:create
+$ _rake db:migrate
+$ _rake db:test:prepare
+$ _ensure you have postgres running
+$ _rails s
+$ _In your browser, go to [localhost:3000]()'localhost:3000') to view application_
 
 
+### Technologies Used
 
-This project was generated with
+* _html_
+* _Bcrypt_
+* _Ruby on Rails_
 
-Development server
-
-
-
-
-
-Build
-
-Run
-
-Running unit tests
-
-Run
-
-Running end-to-end tests
-
-Run
-
-Further help
-
-To get more help  check out the  README.
-
-Technologies Used
-
-Notes:
-There was an initial error: "You have already activated rake 12.3.0, but your Gemfile requires rake 12.0.0. Prepending `bundle exec` to your command may solve this"Database does not exist, which running bundle update, bundle etc did not help
-Ultimately, running bundle update worked, but not initially, though it was tellig me to run bundle lock, which did not solve the problem.
 
 Support and contact details
 
-If you have any updates, questions, or suggestions please contact  Qudsia or make a contribution.
+_If you have any updates, questions, or suggestions please contact q4hmad@gmail.com._
 
-License
+### MIT License
 
-MIT License
-
-Copyright (c) 2017  Qudsia Ahmad
+(c) 2017  Qudsia Ahmad
