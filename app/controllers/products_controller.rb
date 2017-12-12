@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   before_action :authorize, except: [:index, :show]
-  
+
   def index
     @products = Product.all
     @order_item = current_order.order_items.new
@@ -29,10 +29,14 @@ end
     end
   end
 
+  def edit
+    @product = Product.find(params[:id])
+  end
+
   def update
-    @product = Product.find(params[product_params])
-    if current_user === current_user.admin
-      @product.update
+    @product = Product.find(params[:id])
+    if current_user.admin  === true
+      @product.update(product_params)
       flash[:alert] = "Product has been successfully updated."
       redirect_to '/'
     else
@@ -42,8 +46,8 @@ end
   end
 
   def destroy
-    @product = Product.find(params[product_params])
-      if current_user === current_user.admin
+    @product = Product.find(params[:id])
+      if current_user.admin === true
         @product.destroy
           flash[:alert] = "Product has been successfully deleted."
       else
