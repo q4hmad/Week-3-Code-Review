@@ -3,7 +3,7 @@
   <%= form_for @product do |f| %>
     Name: <%= f.text_field :name %>
     Description: <%= f.text_field :description %>
-    Password: <%= f.number_field :price %>
+    Password: <%= f.number_field :price,  value: number_to_currency(f.object.amount.to_f, delimiter: '', unit: ''), step => 0.01 %>
   <%= f.submit "Submit" %>
 
 <% end %>

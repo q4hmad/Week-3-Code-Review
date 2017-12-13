@@ -18,15 +18,20 @@ _Users should be able to add products to their shopping cart from the index page
 #### Objectives Reached
 * _Add an admin column to user._
 * _Add image property to products._
-* _add admin authorization on all routes  _
+* _Remove turbolinks._
 * _Add and delete items from cart using AJAX._
 * _Show and hide product details with AJAX._
 * _Add validation to prevent users from ordering negative quantities of items._
+* _Add product validations._
 * _Add flash messages for signing in and out._
 *  _Add admin flash messages for adding, updating and deleting products._
 * _Add product update and delete functionality for admins_
-* _Add product validations._
+* _Add password validations to ensure a user's password is sufficiently complex._
+* _add admin authorization on some routes  _
 * _Remove turbolinks._
+* _Allow other than whole dollar amounts for admin product creation (for instance, 3.99)._
+
+
 
 
 
